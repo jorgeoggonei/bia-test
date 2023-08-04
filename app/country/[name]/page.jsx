@@ -7,7 +7,7 @@ export default async function Country ({ params }) {
   const { name } = params
   const response = await queryCountries(name)
   const country = response[0]
-  const borders = await countryBorders(country.borders.join(','))
+  const borders = country.borders && await countryBorders(country.borders.join(','))
   return (
     <section className='container mx-auto px-4 py-8'>
       <Link href='/' className='inline-flex items-center gap-2 bg-white dark:bg-dark-blue rounded-sm shadow-lg h-7 mb-10 py-2 px-6'><BsArrowLeft /> Back</Link>
@@ -51,7 +51,7 @@ export default async function Country ({ params }) {
               <p><span className='font-semibold'>Border Countries: </span></p>
               <div className='flex items-center flex-wrap gap-2 mt-3'>
                 {
-                  borders.map((border, index) => {
+                  borders && borders.map((border, index) => {
                     return <Link key={index} href='/country/[name]' as={`/country/${border.name.common}`} className='inline-flex items-center gap-2 bg-white dark:bg-dark-blue rounded-sm shadow-lg h-7 py-2 px-6'>{border.name.common}</Link>
                   })
                 }

@@ -5,14 +5,7 @@ const nextConfig = {
     serverActions: true
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'flagcdn.com',
-        port: '',
-        pathname: ''
-      }
-    ]
+    domains: ['flagcdn.com']
   }
 }
 

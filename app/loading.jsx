@@ -1,5 +1,7 @@
+import Loading from '../components/Loading'
+
 export default function LoadingAllCountries () {
   return (
-    <p>Loading all countries</p>
+    <Loading />
   )
 }
