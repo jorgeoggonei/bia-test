@@ -26,3 +26,6 @@ Search bar redirects to a new page and will show the results. Each country will 
 
 Due to time, I wasn't able to finish the Dropdown filter option.
 
+You can also check the project in vercel with the next URL:
+
+https://bia-test-jorge-santos.vercel.app/
