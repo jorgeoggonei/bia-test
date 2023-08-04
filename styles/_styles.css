@@ -1,0 +1,5 @@
+@layer base {
+  body {
+    @apply bg-very-light-gray dark:bg-very-dark-blue;
+  }
+}
