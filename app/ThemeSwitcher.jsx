@@ -1,6 +1,6 @@
 'use client'
 
-import { BsMoon, BsMoonFill } from 'react-icons/bs'
+import { BsSunFill, BsMoonFill } from 'react-icons/bs'
 
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
@@ -19,7 +19,7 @@ export default function ThemeSwitcher () {
 
   return (
     <button className='font-semibold fill-current flex items-center gap-1' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-      {theme === 'light' ? <BsMoon /> : <BsMoonFill />}
+      {theme === 'light' ? <BsMoonFill /> : <BsSunFill />}
       {theme === 'light' ? 'Dark' : 'Light'} Mode
     </button>
   )

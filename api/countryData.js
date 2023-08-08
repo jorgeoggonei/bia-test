@@ -8,6 +8,11 @@ export const queryCountries = (query) => {
     .then(res => res.json())
 }
 
+export const queryRegions = (query) => {
+  return fetch(`https://restcountries.com/v3.1/region/${query}`)
+    .then(res => res.json())
+}
+
 export const countryBorders = (borders) => {
   return fetch(`https://restcountries.com/v3.1/alpha?codes=${borders}`)
     .then(res => res.json())
