@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 
 import Providers from './Providers'
-import ThemeSwitcher from './ThemeSwitcher'
-import Header from '../components/Header'
+import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher'
+import Header from '../components/Header/Header'
 import { font } from './font'
 
 export const metadata = {

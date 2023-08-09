@@ -18,7 +18,7 @@ export default function ThemeSwitcher () {
   }
 
   return (
-    <button className='font-semibold fill-current flex items-center gap-1' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+    <button data-testid='theme-button' className='font-semibold fill-current flex items-center gap-1' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
       {theme === 'light' ? <BsMoonFill /> : <BsSunFill />}
       {theme === 'light' ? 'Dark' : 'Light'} Mode
     </button>

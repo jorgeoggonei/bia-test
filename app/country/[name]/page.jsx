@@ -47,17 +47,19 @@ export default async function Country ({ params }) {
                 </div>
               </div>
             </div>
-            <div className='col-span-1 lg:col-span-12'>
-              <p><span className='font-semibold'>Border Countries: </span></p>
-              <div className='flex items-center flex-wrap gap-2 mt-3'>
-                {
-                  borders && borders.map((border, index) => {
-                    return <Link key={index} href='/country/[name]' as={`/country/${border.name.common}`} className='inline-flex items-center gap-2 bg-white dark:bg-dark-blue rounded-sm shadow-lg h-7 py-2 px-6'>{border.name.common}</Link>
-                  })
-                }
-              </div>
-            </div>
-
+            {
+              borders &&
+                <div className='col-span-1 lg:col-span-12'>
+                  <p><span className='font-semibold'>Border Countries: </span></p>
+                  <div className='flex items-center flex-wrap gap-2 mt-3'>
+                    {
+                      borders.map((border, index) => {
+                        return <Link key={index} href='/country/[name]' as={`/country/${border.name.common}`} className='inline-flex items-center gap-2 bg-white dark:bg-dark-blue rounded-sm shadow-lg h-7 py-2 px-6'>{border.name.common}</Link>
+                      })
+                    }
+                  </div>
+                </div>
+            }
           </div>
         </div>
       </div>
