@@ -38,4 +38,4 @@ You can see the implemented page according the designs provided. It's a responsi
 - Search bar and Region filter show separated results.
 
 ### Observations
-- One option to implement the test was to use the search bar and filter in the same page. This helps to show the results faster. I did not implement it because using 'use client' in all the page is a bad practice, so I decided not to use this option. This is the reason why I used specific pages for the filter and the search bar
+- One option to implement the application was to use the search bar and filter in the same page. This helps to show the results faster. I did not implement it because using 'use client' in all the page is a bad practice, so I decided not to use this option. This is the reason why I used specific pages for the filter and the search bar
